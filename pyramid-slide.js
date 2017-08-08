@@ -22,7 +22,7 @@ function drawPyramid(height) {
 
 
 function newsymbol() {
-    var height = document.getElementById("heightInput").value;
+    var height = Number.parseInt(document.getElementById("heightInput").value);
     var mylist=document.getElementById("symbol");
     var symbol = mylist.options[mylist.selectedIndex].value;
     var node = document.getElementById("pyramid");
