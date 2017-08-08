@@ -10,14 +10,27 @@
   </head>
   <body>
     <h1>Mario 2</h1>
+    <div id="form">
+    
+    <form>
+    How High?
+    <input id="heightInput" onchange="newsymbol()" type="range" name="points" min="0" max="10">
+    </form> 
+
+    <form>
+    Brick Symbol:
+    <select id="symbol" onchange="newsymbol()">
+        <option value="#">#</option>
+        <option value="@">@</option>
+        <option value="X">X</option>
+        <option value="$">$</option>
+    </select>
+    </form>
+    </div>
     <h3>Behold this wonderful pyramid:</h3>
     <div id="pyramid">
        
-      <div id="construction">
-        <p>Uh oh! the pyramid is still under construction.</p>
-        <p>Check back again soon... our developers are hard at wrk as we speak!</p>
-      </div>
     </div>
-    <script src="mario.js"></script>
+    <script src="pyramid-slide.js"></script>
   </body>
 ﻿</html>
